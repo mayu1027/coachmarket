@@ -24,6 +24,15 @@
     <form class="login-form__form" action="/login" method="post">
         @csrf
         <div class="login-form__group">
+        <label class="login-form__label" for="email">名前</label>
+        <input class="login-form__input" type="text" name="name" id="name" placeholder="例: 太郎">
+        <p class="register-form__error-message">
+            @error('name')
+            {{ $message }}
+            @enderror
+        </p>
+        </div>
+        <div class="login-form__group">
         <label class="login-form__label" for="email">メールアドレス</label>
         <input class="login-form__input" type="mail" name="email" id="email" placeholder="例: test@example.com">
         <p class="register-form__error-message">
