@@ -19,9 +19,9 @@
     </div>
 
     <div class="login-form">
-    <h2 class="login-form__heading content__heading">Login</h2>
+    <h2 class="login-form__heading content__heading">register</h2>
     <div class="login-form__inner">
-    <form class="login-form__form" action="/login" method="post">
+    <form class="login-form__form" action="/register" method="post">
         @csrf
         <div class="login-form__group">
         <label class="login-form__label" for="email">名前</label>
